@@ -6,12 +6,13 @@
   <meta name="description" content="Sanitizr masks sensitive data in documents before you share them or paste them into AI tools. Files are processed locally on your Mac.">
   <title>Sanitizr for macOS</title>
   <link rel="icon" href="assets/sanitizr-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Sanitizr home">
-      <img src="assets/sanitizr-icon.png" alt="" width="32" height="32">
+      <img src="assets/sanitizr-icon.png" alt="" width="30" height="30">
       <span>Sanitizr</span>
     </a>
     <nav aria-label="Primary navigation">
@@ -43,7 +44,7 @@
           </div>
           <div class="window-body">
             <div class="toolbar">
-              <button>Mask files</button>
+              <button class="is-active">Mask files</button>
               <button>Un-mask</button>
               <button>Inspect</button>
             </div>
@@ -82,14 +83,17 @@
       </div>
       <div class="feature-grid">
         <article>
+          <span class="feature-icon" aria-hidden="true"></span>
           <h3>Detects sensitive data automatically</h3>
           <p>Sanitizr finds email addresses, phone numbers, Luhn-validated payment card numbers, IP addresses and URLs. Add your own custom words for client names, people, projects or internal terms.</p>
         </article>
         <article>
+          <span class="feature-icon" aria-hidden="true"></span>
           <h3>Works with common business files</h3>
           <p>Process Word, Excel, PowerPoint, CSV, TXT, Markdown, JSON and log files. Formatting such as tables, headings, colors, speaker notes and headers is preserved where supported.</p>
         </article>
         <article>
+          <span class="feature-icon" aria-hidden="true"></span>
           <h3>Restore values when you are done</h3>
           <p>Sanitizr writes a separate private key file on your Mac. After an AI assistant returns a response, use the Un-mask tool to put the real values back.</p>
         </article>
@@ -102,10 +106,10 @@
         <h2>Your documents stay on your Mac.</h2>
         <p>Sanitizr does not collect, store, transmit or share the contents of the files you process, the values that are masked or your un-mask key files. There is no telemetry, analytics or advertising.</p>
         <p>For paid Pro licenses, the app contacts Lemon Squeezy only to activate, validate or deactivate the license key. That request does not include your documents, masked values, custom word lists or un-mask keys.</p>
-        <a class="text-link" href="https://engawa-dev.github.io/sanitizr-privacy/">Read the privacy policy</a>
+        <a class="text-link" href="https://engawa-dev.github.io/sanitizr-privacy/">Read the privacy policy &rarr;</a>
       </div>
       <div class="privacy-panel">
-        <img src="assets/sanitizr-logo.png" alt="Sanitizr app icon">
+        <img src="assets/sanitizr-icon.png" alt="Sanitizr app icon">
         <dl>
           <div><dt>Files uploaded</dt><dd>None</dd></div>
           <div><dt>Telemetry</dt><dd>None</dd></div>
@@ -131,9 +135,10 @@
           </ul>
         </article>
         <article class="plan featured">
+          <span class="plan-badge">Recommended</span>
           <h3>Pro</h3>
           <p class="price">$29.99</p>
-          <ul>
+          <ul class="plan-features">
             <li>One-time purchase</li>
             <li>Unlimited daily use</li>
             <li>Batch processing</li>
