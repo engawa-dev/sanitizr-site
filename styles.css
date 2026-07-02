@@ -434,12 +434,39 @@ mark {
 }
 
 .feature-grid p,
+.info-grid p,
+.policy-grid p,
 .split p,
 .support p {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.65;
   margin: 0;
+}
+
+/* ---------- Purchase process ---------- */
+.process {
+  background: #ffffff;
+}
+
+.info-grid,
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.info-grid article,
+.policy-grid article {
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+}
+
+.info-grid h3,
+.policy-grid h3 {
+  margin-bottom: 12px;
 }
 
 /* ---------- Privacy split ---------- */
@@ -584,6 +611,24 @@ dd {
   font-weight: 700;
 }
 
+.plan-note {
+  margin: 14px 0 0;
+  color: var(--faint);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ---------- Policies ---------- */
+.policies {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+}
+
+.policy-grid .text-link {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
 /* ---------- Support ---------- */
 .support {
   display: flex;
@@ -652,6 +697,11 @@ dd {
   }
 
   .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid,
+  .policy-grid {
     grid-template-columns: 1fr;
   }
 }
