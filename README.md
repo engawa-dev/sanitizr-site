@@ -8,6 +8,8 @@ https://engawa-dev.github.io/sanitizr-site/
 
 ## Release Notes
 
-- Product checkout is handled by Lemon Squeezy.
+- The macOS edition is distributed through the Mac App Store.
 - Privacy policy is hosted separately at https://engawa-dev.github.io/sanitizr-privacy/
-- The checkout link may return 404 while the Lemon Squeezy product is still a draft.
+- The App Store link may be unavailable until version 1.0 is published.
+- Pro is a non-consumable StoreKit purchase; documents and restoration keys are never
+  included in StoreKit traffic.
